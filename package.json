@@ -5,12 +5,13 @@
     "private": true,
     "main": "index.js",
     "scripts": {
-        "start" : "node index.js",
+        "start": "node index.js",
         "server": "nodemon index.js"
     },
     "dependencies": {
         "cors": "^2.8.5",
         "dotenv": "^8.2.0",
+        "gitignore": "^0.6.0",
         "knex": "^0.21.2",
         "sqlite3": "^5.0.0"
     },
