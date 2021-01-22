@@ -1,8 +1,8 @@
  
 import axios from 'axios';
-
+const baseURL="https://kavya-lambdagram.herokuapp.com"
 function fetchPosts(setPosts){
-axios.get('http://localhost:5000/api/posts/')
+axios.get(`${baseURL}/api/posts/`)
 .then((res)=>{
     console.log('res from fetch',res)
     // return res.data
