@@ -1,4 +1,3 @@
- 
 import axios from 'axios';
 const baseURL="https://kavya-lambdagram.herokuapp.com"
 function fetchPosts(setPosts){
