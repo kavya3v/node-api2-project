@@ -1,8 +1,9 @@
 import axios from 'axios';
 import fetchPosts from './fetchPosts';
+const baseURL="https://kavya-lambdagram.herokuapp.com";
 
 function updatePost(updatePost,postId,setPosts){
-axios.put(`http://localhost:5000/api/posts/${postId}`,updatePost)
+axios.put(`${baseURL}/${postId}`,updatePost)
 .then((res)=>{
     console.log('res from update',res)
     fetchPosts(setPosts);
