@@ -1,7 +1,6 @@
-require('dotenv').config();
-const server=require('../node-api2-project/server');
+ const server=require('./api/server');
 
-PORT= process.env.PORT;
-server.listen(PORT,()=>{
-    console.log(`Server listening in port ${PORT}`)
+const port= process.env.PORT || 5000;
+server.listen(port,()=>{
+    console.log(`Server listening port${port}`)
 })
